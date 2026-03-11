@@ -1,0 +1,20 @@
+# Credentials & secrets
+.credentials.json
+
+# Cache
+cache/
+paste-cache/
+stats-cache.json
+statsig/
+
+# Session & history
+history.jsonl
+session-env/
+file-history/
+shell-snapshots/
+debug/
+todos/
+plans/
+
+# Project-specific settings (may contain sensitive paths)
+projects/
