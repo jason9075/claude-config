@@ -18,3 +18,6 @@ plans/
 
 # Project-specific settings (may contain sensitive paths)
 projects/
+
+# Plugins (external dependencies)
+plugins/
