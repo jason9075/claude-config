@@ -108,6 +108,10 @@ use flake
 ```just
 set shell := ["sh", "-c"]
 
+# 列出所有可用指令
+default:
+    @just --list
+
 # 啟動開發 server（port 8080，預設不開瀏覽器）
 dev:
     @echo "\033[36m[Nord] Running gfx-lab dev server...\033[0m"
@@ -310,14 +314,6 @@ check:
   </style>
 </head>
 <body>
-  <!-- GitHub Ribbon：將 href 替換為你的 repo URL -->
-  <!-- 顏色可換：forkme_right_red_aa0000 / forkme_right_green_007200 / forkme_right_darkblue_121621 -->
-  <a href="https://github.com/YOUR_USERNAME/YOUR_REPO" target="_blank" rel="noopener">
-    <img loading="lazy" decoding="async" width="149" height="149"
-         style="position:fixed;top:0;right:0;border:0;z-index:9999;"
-         src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png"
-         alt="Fork me on GitHub">
-  </a>
 
   <div id="info">gfx-lab | Three.js + KaTeX + Nord</div>
   <div id="toolbar" aria-label="Tool controls">
@@ -532,7 +528,6 @@ Thumbs.db
    - 或手動 `nix develop`
    - 執行 `just dev` 啟動 `live-server`，瀏覽器開啟 `http://localhost:8080`
 3. 提醒：修改 `src/main.js` 後瀏覽器會自動重新載入（no-cache 模式確保不讀舊的 bytecode 快取）
-4. GitHub Ribbon 預設使用官方深藍色圖片（`forkme_right_darkblue_121621.png`），置於右上角；將 `href` 替換為實際 repo URL。可替換圖片檔名切換顏色：`red_aa0000`、`green_007200`、`darkblue_121621`，或移除該 `<a>` 標籤以停用。
 
 ---
 
