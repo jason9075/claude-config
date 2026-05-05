@@ -514,6 +514,9 @@ result-*
 # OS
 .DS_Store
 Thumbs.db
+
+# Agents
+.codex
 ```
 
 ---
