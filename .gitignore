@@ -21,3 +21,5 @@ projects/
 
 # Plugins (external dependencies)
 plugins/
+
+.codex
